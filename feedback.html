@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+
+      rel="stylesheet"
+
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>FEEDBACK</title>
+
+    <style>
+      body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(178, 120, 32, 0.799);
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(178, 120, 32, 0.799);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top:50px;
+}
+
+h2 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-family:"Arial, sans-serif"
+}
+
+input[type="submit"] {
+  font-family: Arial, sans-serif;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #800000;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #800000;
+}
+
+    </style>
+  </head>
+
+  <body style="background-color:rgba(178, 120, 32, 0.799) ;">
+
+    <nav>
+
+        <div class="heading">
+          <h2>  NIKITA </h2>
+    
+          </div>
+
+      <ul class="nav-links">
+
+        <li><a href="index.html">HOME</a></li>
+
+        <li><a href="education.html">EDUCATION</a></li>
+
+        <li><a href="projects.html">PROJECTS</a></li>
+
+        <li><a href="hobbies.html">HOBBIES</a></li>
+
+        <li><a class="active" href="feedback.html">FEEDBACK</a></li>
+
+      </ul>
+
+    </nav>
+    <div class="container">
+      <h2 style="text-align: center;"><u>Feedback Form</u></h2>
+      <br>
+      <form id="feedbackForm" onsubmit="submitForm(event)">
+          <label for="name"><h4>Name:</h4></label>
+          <input type="text" id="name" name="name" font-family="Arial, sans-serif" required>
+
+          <label for="contact"><h4>Contact:</h4></label>
+          <input type="text" id="contact" name="contact" font-family="Arial, sans-serif" required>
+
+          <label for="comments"><h4>Comment:</h4></label>
+          <textarea id="comments" name="comments" rows="4" font-family="Arial, sans-serif" required></textarea>
+
+          <input type="submit" value="Submit">
+          <br>
+      </form>
+  </div>
+  <script src="script.js">
+    
+
+  </script>
+
+  </body>
+
+</html>
